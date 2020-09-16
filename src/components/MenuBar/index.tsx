@@ -21,7 +21,7 @@ const MenuBar: React.FC = () => {
   return (
       <Container>
           <Topside>
-              <Logo />
+              {/* <Logo /> */}
 
               <MenuButton>
                   <HomeIcon />
@@ -52,7 +52,7 @@ const MenuBar: React.FC = () => {
               <Avatar />
 
               <ProfileData>
-                  <strong>Guilherme Rodz</strong>
+                  <strong>Wesley Santos</strong>
                   <strong>@WesleySantosOficial</strong>
               </ProfileData>
 

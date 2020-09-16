@@ -21,7 +21,8 @@ const Sidebar: React.FC = () => {
                 <List title="Talvez você curta" elements={[
                     <FallowSuggestion name="Thomas Eric" nickname="@Repercuuuull"/>,
                     <FallowSuggestion name="Thyago Araujo"nickname="@Tata"/>,
-                    <FallowSuggestion name="Douglas Pouey"nickname="@Doug"/>
+                    <FallowSuggestion name="Douglas Pouey"nickname="@Doug"/>,
+                    <FallowSuggestion name="Henrique Almeita"nickname="@MyMaster"/>
                 ]}/>
 
                 <List title="O que está acontecendo" elements={[
