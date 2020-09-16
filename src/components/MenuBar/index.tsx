@@ -49,7 +49,7 @@ const MenuBar: React.FC = () => {
           </Topside>
 
           <Botside>
-              <Avatar/>
+              <Avatar />
 
               <ProfileData>
                   <strong>Guilherme Rodz</strong>
