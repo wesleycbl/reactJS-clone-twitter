@@ -1,5 +1,6 @@
 import React from 'react';
-
+import List from '../List';
+import FallowSuggestion from '../FollowSuggestion';
 import { Container,SearchWrapper,SearchInput,SearchIcon,Body } from './styles';
 
 const Sidebar: React.FC = () => {
@@ -11,7 +12,15 @@ const Sidebar: React.FC = () => {
           </SearchWrapper>
 
           <Body>
-            <p>{'Lorem ipsum dolor sit amet.'.repeat(90)}</p>
+             <List title="Talvez você curta" elements={[
+                 <FallowSuggestion name="Douglas Pouey"nickname="@Doug"/>
+             ]}/>
+             <List title="Talvez você curta" elements={[
+                 <FallowSuggestion name="Thyago Araujo"nickname="@Tata"/>
+             ]}/>
+             <List title="Talvez você curta" elements={[
+                 <FallowSuggestion name="Thomas Eric" nickname="@Repercuuuull"/>
+             ]}/>
           </Body>
       </Container>
   );
