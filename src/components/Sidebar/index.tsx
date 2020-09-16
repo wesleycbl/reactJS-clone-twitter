@@ -1,6 +1,10 @@
 import React from 'react';
+/* animação de scroll do twitter*/
+import StickBox from 'react-sticky-box';
 import List from '../List';
 import FallowSuggestion from '../FollowSuggestion';
+import News from '../News';
+
 import { Container,SearchWrapper,SearchInput,SearchIcon,Body } from './styles';
 
 const Sidebar: React.FC = () => {
@@ -11,17 +15,26 @@ const Sidebar: React.FC = () => {
               <SearchIcon />
           </SearchWrapper>
 
-          <Body>
-             <List title="Talvez você curta" elements={[
-                 <FallowSuggestion name="Douglas Pouey"nickname="@Doug"/>
-             ]}/>
-             <List title="Talvez você curta" elements={[
-                 <FallowSuggestion name="Thyago Araujo"nickname="@Tata"/>
-             ]}/>
-             <List title="Talvez você curta" elements={[
-                 <FallowSuggestion name="Thomas Eric" nickname="@Repercuuuull"/>
-             ]}/>
-          </Body>
+          <StickBox>
+            <Body>
+                
+                <List title="Talvez você curta" elements={[
+                    <FallowSuggestion name="Thomas Eric" nickname="@Repercuuuull"/>,
+                    <FallowSuggestion name="Thyago Araujo"nickname="@Tata"/>,
+                    <FallowSuggestion name="Douglas Pouey"nickname="@Doug"/>
+                ]}/>
+
+                <List title="O que está acontecendo" elements={[
+                    <News/>,
+                    <News />,
+                    <News />,
+                    <News />,
+                    <News />,
+                    <News/>
+                ]}/>
+            </Body>
+          </StickBox>
+          
       </Container>
   );
 }
