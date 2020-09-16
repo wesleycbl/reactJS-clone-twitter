@@ -4,6 +4,6 @@ Conceitos de Respnsividade.
 Conceitos Basicos do ReactJs.
 
 
-## Projeto aplicado
+## Link da Demo
 
 https://quirky-bartik-3b7676.netlify.app/
